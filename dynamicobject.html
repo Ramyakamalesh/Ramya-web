@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fnObjcet()
+        {
+        var refInput = document.getElementById('textInput')
+       var refPassword = document.getElementById('passwordInput')
+       var refEmail = document.getElementById('textEmail')
+       var refNum = document.getElementById('textNumber')
+        var h1Text = document.getElementById('h1Ref')
+        var name = refInput.value
+        var password = refPassword.value
+        var email = refEmail.value
+        var phonenumber =refNum.value
+       // var h1Value=h1Text.innerText
+        h1Text.innerText = "formsubmitted"
+        console.log(name)
+        console.log(password)
+        console.log(email)
+        console.log(phonenumber)
+       // console.log(h1Value)
+    refInput.value = ' '
+    refPassword.value = ' '
+    refEmail.value = ' '
+    refNum.value = ' '
+    var b1Text= document.getElementById("b1Ref")
+    b1Text.value="submitted"
+   
+        }
+    
+    </script>
+</head>
+<body style="background-color:aliceblue;">
+    <div style="text-align:center; margin-top:100px;">
+    <h1 id="h1Ref">login form</h1>
+    <input type="text" placeholder="name" id="textInput"/> <br>
+    <input type="password" placeholder="password" id="passwordInput" style="margin-top:10px"/><br>
+    <input type="email" placeholder="email" id="textEmail" style="margin-top:10px"/> <br>
+    <input type="number" placeholder="phonenumber" id="textNumber" style="margin-top:10px"/> <br>
+    <input type ="button" value="submit" onclick="fnObjcet()" id="b1Ref" style="margin-top:10px; text-align:center; color:red"/>
+    </div>
+
+</body>
+</html>
